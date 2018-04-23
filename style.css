@@ -1,0 +1,236 @@
+
+body {
+    margin: 0;
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.navbar {
+    background: #eb2d27;
+    max-height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+	border-top: solid white;
+
+}
+
+.logo {
+    max-height: 60px;
+    width: auto;
+}
+.navbar-item {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5px;
+}
+.body {
+	margin: 100px 10%;
+	background: white;
+	padding: 16px;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	min-height: 385px;
+	justify-content: space-around;
+	
+}
+.player {
+	margin: 100px 10% 70px;
+	background: white;
+	padding: 16px;
+	
+}
+.videobox {
+    min-width: 10px;
+    max-width: 300px;
+    height: auto;
+	flex-shrink: 1;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	
+}
+.videobox:hover {
+	background: #f0f0f0;
+}
+.videobox img {
+	width: 300px;
+}
+.videobox-content {
+
+}
+.videobox-title {
+	font-size: 15px;
+	width: 100%;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a {
+	color: gray;
+	text-decoration: none;
+}
+p 
+{
+    display: block;
+}
+.navbar-item-right {
+	float: right;
+	margin-top: 18px;
+}
+
+.navbar-item-right a {
+	float: left;
+	color: white;
+	margin-right: 10px;
+	
+}
+
+video {
+	width: 100%;
+}
+.video-titel {
+	width: 100%;
+	font-size: 20px;
+}
+.video-desc {
+	color: #626262;
+	width: 100%;
+}
+.icon {
+	display:none;
+	font-size: 24px;
+	margin-top: -6px;	
+}
+
+.navbar-item-right a:hover {
+	color: #630300;
+}
+
+@media only screen and (max-width: 500px) {
+    .body {
+        margin-left: 0;
+		margin-right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+	.navbar-item-right {
+		    margin-top: 0px;
+			background: #d5241f;
+			width: 100%;
+			float: left;
+			position: absolute !important;
+			left: 0;
+			text-align: center;
+	}
+    .navbar-item-right a {display: none;}
+    a.icon {
+        float: right;
+        display: block;
+		font-size: 24px;
+		margin-top: -6px;
+		color: white;
+		margin-top: 12px;
+    }
+}
+.error {
+	width: 100%;
+	text-align: center;
+	background: #bf1e2e;
+	border: dashed #f86560;
+	color: white;font-size: 33px;
+	line-height: 91px;
+	max-height: 90px;
+}
+@media screen and (max-width: 600px) {
+    .navbar-item-right.responsive {position: relative;}
+    .navbar-item-right.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar-item-right.responsive a {
+        float: none;
+		display: block;
+		text-align: center;
+		margin-top: 11px;
+		margin-bottom: 8px;
+    }
+	.error {
+		font-size: 20px;
+	}
+}
+
+.footer {
+	width: 100%;
+	min-height: 124px;
+	background: #f86560;
+}
+
+div .title {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+
+hr {
+	color: #f0f0f0;
+	height: 1px;
+	background: #f0f0f0;
+	border-style: solid;
+}
+
+.footer .inner {
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	justify-content: space-around;
+}
+
+.footer .inner div {
+	max-width: 200px;
+}
+.footer .inner div a{
+	color: white;
+	font-size: 18px;
+}
+
+input[type=text], input[type=password] { /* Här är designen för input områderna för att logga in */)
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button { /* här skapas designen för login knappen */
+	min-height: 40px;
+	min-width: 80px;
+	background: #bf1e2e;
+	border: none;
+	color: white;
+}
+
+/*
+	Här skapas designen för loadern
+*/
+#loading {
+	width: 100%;
+	background: #e71d1d;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	display: block;
+	z-index: 99
+}
+#loading-image {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	z-index: 100
+}
